@@ -17,6 +17,7 @@ speakBtn.onclick = ()=>{
     recognitions.continuous = true
 
     recognitions.addEventListener("start", ()=>{
+        textArea.textContent = ""
         speakBtn.classList.remove("fa-microphone-lines")
         speakBtn.classList.add("fa-microphone-lines-slash")
         text.textContent = "Now recording..."
